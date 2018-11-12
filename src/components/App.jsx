@@ -23,6 +23,7 @@ const getTabs = () => [
   'SnackBar',
   'Switch',
   'TextField',
+  'Theme Provider',
   'Typography'
 ];
 

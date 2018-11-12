@@ -27,6 +27,7 @@ Below, the list of all available components:
 | [Snackbar](./src/components/demo/snackbar/README.md) | [Snackbars](https://material.io/develop/web/components/snackbars) |
 | [Switch](./src/components/demo/switch/README.md) | [Switches](https://material.io/develop/web/components/input-controls/switches) |
 | [TextField](./src/components/demo/textfield/README.md) | [Text Field](https://material.io/develop/web/components/input-controls/text-field) |
+| [ThemeProvider](./src/components/demo/theme_provider/README.md) | [Theme](https://material.io/develop/web/components/theme) |
 | [Typography](./src/components/demo/typography/README.md) | [Typography](https://material.io/develop/web/components/typography) |
 
 ### Miscellaneous

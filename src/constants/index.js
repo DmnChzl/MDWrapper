@@ -12,6 +12,7 @@ export const BLACK = '#000';
 export const WHITE = '#fff';
 
 // Icons
+export const BRUSH = 'brush';
 export const CANCEL = 'cancel';
 export const CREATE = 'create';
 export const DONE = 'done';

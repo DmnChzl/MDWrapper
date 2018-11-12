@@ -3,6 +3,7 @@ import { mount } from 'enzyme';
 import ThemeProvider from './ThemeProvider';
 import { BLACK, WHITE } from '../../constants';
 
+const ERROR = '#f44336';
 const PRIMARY = '#3700b3';
 const SECONDARY = '#03dac6';
 
@@ -24,12 +25,15 @@ describe('ThemeProvider Component', () => {
 
   it('Check Props', () => {
     wrapper.setProps({
+      error: ERROR,
       primary: PRIMARY,
       secondary: SECONDARY
     });
 
     expect(wrapper.props().background).toEqual(WHITE);
     expect(wrapper.props().children).toHaveLength(4);
+    expect(wrapper.props().error).toEqual(ERROR);
+    expect(wrapper.props().onError).toEqual(WHITE);
     expect(wrapper.props().onPrimary).toEqual(WHITE);
     expect(wrapper.props().onSecondary).toEqual(BLACK);
     expect(wrapper.props().onSurface).toEqual(BLACK);

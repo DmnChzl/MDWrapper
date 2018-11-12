@@ -16,6 +16,7 @@ import {
   SnackBar as SnackBarSample,
   Switch as SwitchSample,
   TextField as TextFieldSample,
+  ThemeProvider as ThemeProviderSample,
   Typography as TypographySample
 } from './demo';
 
@@ -37,6 +38,7 @@ const Router = () => (
     <Route path="/snackbar" component={SnackBarSample} />
     <Route path="/switch" component={SwitchSample} />
     <Route path="/textfield" component={TextFieldSample} />
+    <Route path="/theme_provider" component={ThemeProviderSample} />
     <Route path="/typography" component={TypographySample} />
   </Switch>
 );
