@@ -5,7 +5,7 @@ import '@material/layout-grid/dist/mdc.layout-grid.css';
 /**
  * MD Component: GridInner
  * 
- * @param {Node} children Content
+ * @param {Object} children Node Content
  * @param {Object} style Overrides Style
  */
 const GridInner = ({ children, style }) => {

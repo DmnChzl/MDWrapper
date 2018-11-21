@@ -32,22 +32,22 @@ List of all properties for the **Card** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 
 List of all properties for the **CardActions** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 
 List of all properties for the **CardActionButtons** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 
 List of all properties for the **CardActionIcons** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |

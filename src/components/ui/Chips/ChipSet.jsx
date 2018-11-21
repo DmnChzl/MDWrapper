@@ -7,7 +7,7 @@ import '@material/chips/dist/mdc.chips.css';
 /**
  * MD Component: ChipSet
  *
- * @param {Node} children Content
+ * @param {Object} children Node Content
  * @param {Boolean} choice Choice Style
  */
 class ChipSet extends PureComponent {

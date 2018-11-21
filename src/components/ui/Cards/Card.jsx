@@ -5,7 +5,7 @@ import '@material/card/dist/mdc.card.css';
 /**
  * MD Component: Card
  *
- * @param {Node} children Content
+ * @param {Object} children Node Content
  */
 const Card = ({ children }) => (
   <div className="mdc-card">

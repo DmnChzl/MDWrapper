@@ -7,7 +7,7 @@ import '@material/fab/dist/mdc.fab.css';
 /**
  * MD Component: FAB
  *
- * @param {Node} children Content
+ * @param {Object} children Node Content
  * @param {String} label Label
  * @param {Boolean} mini Mini Style
  * @param {Function} onClick Click Trigger

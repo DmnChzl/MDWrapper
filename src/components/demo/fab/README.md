@@ -22,7 +22,7 @@ List of all properties for the **FAB** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 | label | _string_ | - | Label |
 | mini | _boolean_ | false | Mini Style |
 | onClick | _function_ | void | Click Trigger |

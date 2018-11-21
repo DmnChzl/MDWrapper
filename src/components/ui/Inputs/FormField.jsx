@@ -5,7 +5,7 @@ import '@material/form-field/dist/mdc.form-field.css';
 /**
  * MD Component: FormField
  *
- * @param {Node} children Content
+ * @param {Object} children Node Content
  * @param {Object} style Overrides Style
  */
 const FormField = ({ children, style }) => {

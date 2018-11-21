@@ -29,7 +29,7 @@ List of all properties for the **Grid** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 | hAlign | _string_ | - | Horizontal Alignment: ('left' & 'right') |
 | style | _object_ | {} | Overrides Style |
 
@@ -37,14 +37,14 @@ List of all properties for the **GridInner** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 | style | _object_ | {} | Overrides Style |
 
 List of all properties for the **GridCell** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 | col | _number_ | 4 | Bootstrap Columns |
 | style | _object_ | {} | Overrides Style |
 | vAlign | _string_ | - | Vertical Alignment: ('top', 'middle' & 'bottom') |

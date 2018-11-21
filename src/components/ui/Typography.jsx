@@ -5,7 +5,7 @@ import '@material/typography/dist/mdc.typography.css';
 /**
  * MD Component: Typography
  * 
- * @param {Node} children Content
+ * @param {Object} children Node Content
  * @param {String} element Element
  * @param {Number} size Size: 1 || 2 || 3 || 4 || 5 || 6
  * @param {String} type Type: 'headline' || 'subtitle' || 'body'

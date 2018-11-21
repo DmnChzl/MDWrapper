@@ -6,7 +6,7 @@ import '@material/tab-scroller/dist/mdc.tab-scroller.css';
 /**
  * MD Component: TabScroller
  * 
- * @param {Node} children Content
+ * @param {Object} children Node Content
  */
 class TabScroller extends PureComponent {
   componentDidMount() {

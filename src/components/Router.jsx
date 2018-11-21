@@ -17,6 +17,7 @@ import {
   Switch as SwitchSample,
   TextField as TextFieldSample,
   ThemeProvider as ThemeProviderSample,
+  TopBar as TopBarSample,
   Typography as TypographySample
 } from './demo';
 
@@ -39,6 +40,7 @@ const Router = () => (
     <Route path="/switch" component={SwitchSample} />
     <Route path="/textfield" component={TextFieldSample} />
     <Route path="/theme_provider" component={ThemeProviderSample} />
+    <Route path="/topbar" component={TopBarSample} />
     <Route path="/typography" component={TypographySample} />
   </Switch>
 );

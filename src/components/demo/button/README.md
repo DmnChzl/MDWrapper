@@ -24,7 +24,7 @@ List of all properties for the **Button** component:
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
 | classes | _array_ | [] | Overrides Class |
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 | dense | _boolean_ | false | Dense Style |
 | disabled | _boolean_ | false | Available State |
 | onClick | _function_ | void | Click Trigger |

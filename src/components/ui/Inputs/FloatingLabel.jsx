@@ -6,7 +6,7 @@ import '@material/floating-label/dist/mdc.floating-label.css';
 /**
  * MD Component: FloatingLabel
  *
- * @param {Node} children Content
+ * @param {Object} children Node Content
  */
 class FloatingLabel extends PureComponent {
   componentDidMount() {

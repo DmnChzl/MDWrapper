@@ -6,7 +6,7 @@ import '@material/layout-grid/dist/mdc.layout-grid.css';
 /**
  * MD Component: Grid
  * 
- * @param {Node} children Content
+ * @param {Object} children Node Content
  * @param {String} hAlign Horizontal Alignment: 'left' || 'right'
  * @param {Object} style Overrides Style
  */

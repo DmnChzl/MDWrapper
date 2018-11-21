@@ -29,7 +29,7 @@ List of all properties for the **ThemeProvider** component:
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
 | background | _string_ | '#fff' | BackGround Color |
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 | error | _string_ | '#b00020' | Error Color |
 | onError | _string_ | '#fff' | On Error Color |
 | onPrimary | _string_ | '#fff' | On Primary Color |

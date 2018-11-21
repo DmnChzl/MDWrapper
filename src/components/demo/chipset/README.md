@@ -22,13 +22,13 @@ List of all properties for the **ChipSet** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 | choice | _boolean_ | false | Choice Style |
 
 List of all properties for the **Chip** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 | icon | _string_ | - | Material Design Icon |
 | onClick | _function_ | - | Click Trigger |

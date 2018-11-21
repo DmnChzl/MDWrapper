@@ -32,6 +32,6 @@ List of all properties for the **SnackBar** component:
 |--|--|--|--|
 | active | _boolean_ | false | Active |
 | aligned | _boolean_ | false | Aligned Style |
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 | label | _string_ | 'default' | Label |
 | onClick | _function_ | void | Click Trigger |

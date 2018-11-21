@@ -9,7 +9,7 @@ import '@material/tab/dist/mdc.tab.css';
  * MD Component: Tab
  * 
  * @param {Boolean} active Active
- * @param {Node} children Content
+ * @param {Object} children Node Content
  * @param {String} icon Material Design Icon
  * @param {String} label Label
  * @param {Function} onClick Click Trigger

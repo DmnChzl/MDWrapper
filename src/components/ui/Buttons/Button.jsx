@@ -8,7 +8,7 @@ import '@material/button/dist/mdc.button.css';
  * MD Component: Button
  *
  * @param {Array} classes Overrides Class
- * @param {Node} children Content
+ * @param {Object} children Node Content
  * @param {Boolean} dense Dense Style
  * @param {Boolean} disabled Available State
  * @param {Function} onClick Click Trigger

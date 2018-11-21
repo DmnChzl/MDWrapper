@@ -10,6 +10,7 @@ export * from './Chips';
 export * from './Inputs';
 export * from './Layouts';
 export * from './Tabs';
+export * from './TopBar';
 
 export {
   Icon,

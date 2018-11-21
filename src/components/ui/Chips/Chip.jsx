@@ -7,7 +7,7 @@ import '@material/chips/dist/mdc.chips.css';
 /**
  * MD Component: Chip
  *
- * @param {Node} children Content
+ * @param {Object} children Node Content
  * @param {String} icon Material Design Icon
  * @param {Function} onClick Click Trigger
  */

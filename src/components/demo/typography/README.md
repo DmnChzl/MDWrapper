@@ -20,7 +20,7 @@ List of all properties for the **Typography** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| children | _node_ | - | Content |
+| children | _object_ | - | Node Content |
 | element | _string_ | 'span' | Element |
 | size | _number_ | 1 | Size: (1, 2, 3, 4, 5 & 6) |
 | type | _string_ | '' | Type: ('headline', 'subtitle' & 'body') |

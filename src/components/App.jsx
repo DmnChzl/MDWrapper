@@ -24,6 +24,7 @@ const getTabs = () => [
   'Switch',
   'TextField',
   'Theme Provider',
+  'TopBar',
   'Typography'
 ];
 

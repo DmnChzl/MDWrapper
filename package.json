@@ -39,6 +39,7 @@
     "@material/tab-scroller": "^0.41.0",
     "@material/textfield": "^0.41.0",
     "@material/theme": "^0.41.0",
+    "@material/top-app-bar": "^0.41.0",
     "@material/typography": "^0.41.0",
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2",

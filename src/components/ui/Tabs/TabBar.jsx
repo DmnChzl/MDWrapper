@@ -6,7 +6,7 @@ import '@material/tab-bar/dist/mdc.tab-bar.css';
 /**
  * MD Component: TabBar
  *
- * @param {Node} children Content
+ * @param {Object} children Node Content
  */
 class TabBar extends PureComponent {
   componentDidMount() {

@@ -14,4 +14,5 @@ export * from './snackbar';
 export * from './switch';
 export * from './textfield';
 export * from './theme_provider';
+export * from './topbar';
 export * from './typography';

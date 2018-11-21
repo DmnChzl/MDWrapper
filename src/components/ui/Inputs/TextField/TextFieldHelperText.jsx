@@ -6,7 +6,7 @@ import '@material/textfield/dist/mdc.textfield.css';
 /**
  * MD Component: TextFieldHelperText
  *
- * @param {Node} children Content
+ * @param {Object} children Node Content
  */
 class TextFieldHelperText extends PureComponent {
   componentDidMount() {

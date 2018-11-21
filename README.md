@@ -28,6 +28,7 @@ Below, the list of all available components:
 | [Switch](./src/components/demo/switch/README.md) | [Switches](https://material.io/develop/web/components/input-controls/switches) |
 | [TextField](./src/components/demo/textfield/README.md) | [Text Field](https://material.io/develop/web/components/input-controls/text-field) |
 | [ThemeProvider](./src/components/demo/theme_provider/README.md) | [Theme](https://material.io/develop/web/components/theme) |
+| [TopBar](./src/components/demo/topbar/README.md) | [Top App Bar](https://material.io/develop/web/components/top-app-bar) |
 | [Typography](./src/components/demo/typography/README.md) | [Typography](https://material.io/develop/web/components/typography) |
 
 ### Miscellaneous

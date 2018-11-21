@@ -13,7 +13,7 @@ const clearFix = {
  * 
  * @param {Boolean} active Active
  * @param {Boolean} aligned Aligned Style
- * @param {Node} children Content
+ * @param {Object} children Node Content
  * @param {String} label Label
  * @param {Function} onClick Click Trigger
  */

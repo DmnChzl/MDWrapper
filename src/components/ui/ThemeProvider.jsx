@@ -11,7 +11,7 @@ const SECONDARY = '#018786';
  * MD Component: ThemeProvider
  * 
  * @param {String} background BackGround Color
- * @param {Node} children Content
+ * @param {Object} children Node Content
  * @param {String} error Error Color
  * @param {String} onError On Error Color
  * @param {String} onPrimary On Primary Color
