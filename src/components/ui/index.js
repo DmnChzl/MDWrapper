@@ -7,6 +7,7 @@ import Typography from './Typography';
 export * from './Buttons';
 export * from './Cards';
 export * from './Chips';
+export * from './Dialog';
 export * from './Inputs';
 export * from './Layouts';
 export * from './Tabs';

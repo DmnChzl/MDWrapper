@@ -5,6 +5,7 @@ import {
   Card as CardSample,
   ChipSet as ChipSetSample,
   CheckBox as CheckBoxSample,
+  Dialog as DialogSample,
   FAB as FABSample,
   Icon as IconSample,
   IconButton as IconButtonSample,
@@ -28,6 +29,7 @@ const Router = () => (
     <Route path="/card" component={CardSample} />
     <Route path="/chipset" component={ChipSetSample} />
     <Route path="/checkbox" component={CheckBoxSample} />
+    <Route path="/dialog" component={DialogSample} />
     <Route path="/fab" component={FABSample} />
     <Route path="/icon" component={IconSample} />
     <Route path="/icon_button" component={IconButtonSample} />

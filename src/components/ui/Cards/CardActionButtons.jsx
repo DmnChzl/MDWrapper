@@ -7,14 +7,14 @@ import '@material/card/dist/mdc.card.css';
  *
  * @param {Object} children Node Content
  */
-const CardActionButton = ({ children }) => (
+const CardActionButtons = ({ children }) => (
   <div className="mdc-card__action-buttons">
     {children}
   </div>
 );
 
-CardActionButton.propTypes = {
+CardActionButtons.propTypes = {
   children: node
 };
 
-export default CardActionButton;
+export default CardActionButtons;

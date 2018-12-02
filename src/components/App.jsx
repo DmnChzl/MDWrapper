@@ -12,6 +12,7 @@ const getTabs = () => [
   'Card',
   'CheckBox',
   'ChipSet',
+  'Dialog',
   'FAB',
   'Icon',
   'Icon Button',

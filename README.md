@@ -16,6 +16,7 @@ Below, the list of all available components:
 | [Card](./src/components/demo/card/README.md) [CardActions](./src/components/demo/card/README.md) [CardActionButtons](./src/components/demo/card/README.md) [CardActionIcons](./src/components/demo/card/README.md) | [Cards](https://material.io/develop/web/components/cards) |
 | [CheckBox](./src/components/demo/checkbox/README.md) | [Checkboxes](https://material.io/develop/web/components/input-controls/checkboxes) |
 | [ChipSet](./src/components/demo/chipset/README.md) [Chip](./src/components/demo/chipset/README.md) | [Chips](https://material.io/develop/web/components/chips) |
+| [Dialog](./src/components/demo/dialog/README.md) | [Dialogs](https://material.io/develop/web/components/dialogs) |
 | [FAB](./src/components/demo/fab/README.md) | [Floating Action Buttons](https://material.io/develop/web/components/buttons/floating-action-buttons) |
 | [Icon](./src/components/demo/icon/README.md) | [Icons](https://material.io/tools/icons) |
 | [IconButton](./src/components/demo/icon_button/README.md) | [Icon Buttons](https://material.io/develop/web/components/buttons/icon-buttons) |
