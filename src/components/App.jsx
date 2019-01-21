@@ -20,6 +20,7 @@ const getTabs = () => [
   'Layout',
   'Linear Progress',
   'Radio',
+  'Select Menu',
   'Slider',
   'SnackBar',
   'Switch',

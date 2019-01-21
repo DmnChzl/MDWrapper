@@ -13,6 +13,7 @@ import {
   Layout as LayoutSample,
   LinearProgress as LinearProgressSample,
   Radio as RadioSample,
+  SelectMenu as SelectMenuSample,
   Slider as SliderSample,
   SnackBar as SnackBarSample,
   Switch as SwitchSample,
@@ -37,6 +38,7 @@ const Router = () => (
     <Route path="/layout" component={LayoutSample} />
     <Route path="/linear_progress" component={LinearProgressSample} />
     <Route path="/radio" component={RadioSample} />
+    <Route path="/select_menu" component={SelectMenuSample} />
     <Route path="/slider" component={SliderSample} />
     <Route path="/snackbar" component={SnackBarSample} />
     <Route path="/switch" component={SwitchSample} />
