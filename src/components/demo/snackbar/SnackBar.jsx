@@ -35,7 +35,7 @@ class Demo extends Component {
             <Button onClick={() => this.showSnackBar()}>
               SnackBar
             </Button>
-            <SnackBar active={display} label={'Close'} onClick={() => this.hideSnackBar()} aligned>
+            <SnackBar open={display} label={'Close'} onClick={() => this.hideSnackBar()} leading>
               Hello World
             </SnackBar>
           </GridCell>

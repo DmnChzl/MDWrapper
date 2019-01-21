@@ -15,7 +15,7 @@ const Demo = () => (
       Show
     </Button>
     <SnackBar 
-      active={this.state.display} 
+      open={this.state.display} 
       label={'Close'} 
       onClick={() => this.setState({ display: false })}>
       Demo
@@ -30,8 +30,9 @@ List of all properties for the **SnackBar** component:
 
 | **Prop** | **Type** | **Default** | **Description** |
 |--|--|--|--|
-| active | _boolean_ | false | Active |
-| aligned | _boolean_ | false | Aligned Style |
 | children | _object_ | - | Node Content |
 | label | _string_ | 'default' | Label |
+| leading | _boolean_ | false | Leading Style |
 | onClick | _function_ | void | Click Trigger |
+| open | _boolean_ | false | Open |
+| stacked | _boolean_ | false | Stacked Style |

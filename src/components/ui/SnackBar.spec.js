@@ -18,16 +18,27 @@ describe('SnackBar Component', () => {
     // expect(wrapper).toMatchSnapshot();
   });
 
-  it('Check Props', () => {
-    wrapper.setProps({
-      active: true,
-      label: 'Done'
+  describe('Check Props', () => {
+    it('Return Default', () => {
+      wrapper.setProps({
+        label: 'Done',
+        open: true
+      });
+  
+      expect(wrapper.props().children).toHaveLength(4);
+      expect(wrapper.props().label).toHaveLength(4);
+      expect(wrapper.props().leading).toBe(false);
+      expect(wrapper.props().open).toBe(true);
+      expect(wrapper.props().stacked).toBe(false);
     });
 
-    expect(wrapper.props().active).toBe(true);
-    expect(wrapper.props().aligned).toBe(false);
-    expect(wrapper.props().children).toHaveLength(4);
-    expect(wrapper.props().label).toHaveLength(4);
+    it('Return Stacked', () => {
+      wrapper.setProps({
+        stacked: true
+      });
+
+      expect(wrapper.props().stacked).toBe(true);
+    });
   });
 
   it('Simulate Click Event', () => {
