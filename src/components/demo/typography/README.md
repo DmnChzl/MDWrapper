@@ -10,7 +10,10 @@ Below, an example of using the **Typography** component:
 import { Typography } from 'mdwrapper';
 
 const Demo = () => (
-  <Typography checked label={'Demo'} onChange={e => console.log(e)} />
+  <>
+    <Typography type={'headline'} size={4}/>Headline<Typography>
+    <Typography type={'body'} size={2}/>Body<Typography>
+  </>
 );
 ```
 

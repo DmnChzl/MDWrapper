@@ -11,6 +11,9 @@ module.exports = {
   transformIgnorePatterns: [
     '/node_modules/(?!@material)'
   ],
+  moduleNameMapper: {
+    "@/(.*)$": "<rootDir>/src/$1"
+  },
   moduleFileExtensions: [
     'js',
     'jsx'
