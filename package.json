@@ -2,7 +2,7 @@
   "name": "mdwrapper",
   "version": "0.7.4",
   "description": "Material Design Wrapper",
-  "main": "lib/src/components/ui/index.js",
+  "main": "lib/components/ui/index.js",
   "author": "Damien Chazoule",
   "repository": "https://github.com/mrdoomy/mdwrapper.git",
   "scripts": {
