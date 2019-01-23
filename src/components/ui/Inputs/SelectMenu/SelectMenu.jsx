@@ -6,6 +6,8 @@ import FormField from '../FormField';
 import FloatingLabel from '../FloatingLabel';
 import LineRipple from '../LineRipple';
 import SelectMenuNotchedOutlined from './SelectMenuNotchedOutlined';
+import SelectMenuIcon from './SelectMenuIcon';
+import SelectMenuHelperText from './SelectMenuHelperText';
 import '@material/select/dist/mdc.select.css';
 
 /**
@@ -13,6 +15,8 @@ import '@material/select/dist/mdc.select.css';
  *
  * @param {Array} data Data
  * @param {Boolean} disabled Available State
+ * @param {String} helper Helper Text
+ * @param {String} icon Material Design Icon
  * @param {String} label Label
  * @param {Function} onChange Change Trigger
  * @param {Boolean} outlined Outlined Style
@@ -23,11 +27,12 @@ class SelectMenu extends PureComponent {
   }
 
   render() {
-    const { data, disabled, label, onChange, outlined } = this.props;
+    const { data, disabled, helper, icon, label, onChange, outlined } = this.props;
 
     // Class(es)
     const mdcDisabled = 'mdc-select--disabled';
     const mdcOutlined = 'mdc-select--outlined';
+    const mdcWithLeadingIcon = 'mdc-select--with-leading-icon';
 
     return (
       <FormField>
@@ -35,7 +40,10 @@ class SelectMenu extends PureComponent {
           ref={element => { this.mdSelectMenu = element }}
           className={classNames('mdc-select',
             { [mdcDisabled]: disabled },
-            { [mdcOutlined]: outlined })}>
+            { [mdcOutlined]: outlined },
+            { [mdcWithLeadingIcon]: icon })}>
+          {icon &&
+            <SelectMenuIcon font={icon} />}
           <i className="mdc-select__dropdown-icon"></i>
           <select
             className="mdc-select__native-control"
@@ -61,6 +69,8 @@ class SelectMenu extends PureComponent {
                 <FloatingLabel>{label}</FloatingLabel>}
             </SelectMenuNotchedOutlined>}
         </div>
+        {helper &&
+          <SelectMenuHelperText>{helper}</SelectMenuHelperText>}
       </FormField>
     );
   }
@@ -76,6 +86,8 @@ SelectMenu.defaultProps = {
 SelectMenu.propTypes = {
   data: array,
   disabled: bool,
+  helper: string,
+  icon: string,
   label: string,
   onChange: func,
   outlined: bool

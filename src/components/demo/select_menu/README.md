@@ -11,8 +11,9 @@ import { SelectMenu } from 'mdwrapper';
 
 const Demo = () => (
   <SelectMenu
-    label={'Fruit'}
-    data={['Apple', 'Banana', 'Clementine']}
+    label={'Hue'}
+    data={['Red', 'Green', 'Blue']}
+    icon={'brush'}
     onChange={e => console.log(e.target.value)} />
 );
 ```
@@ -25,6 +26,8 @@ List of all properties for the **SelectMenu** component:
 |--|--|--|--|
 | data | _array_ | [] | Data |
 | disabled | _boolean_ | false | Available State |
+| helper | _string_ | - | Helper Text |
+| icon | _string_ | - | Material Design Icon |
 | label | _string_ | - | Label |
 | onChange | _function_ | void | Change Trigger |
 | outlined | _boolean_ | false | Outlined Style |

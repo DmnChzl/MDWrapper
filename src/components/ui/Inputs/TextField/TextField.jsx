@@ -36,7 +36,7 @@ class TextField extends PureComponent {
     const { fullWidth, disabled, helper, icon, label, onChange, outlined, placeholder, trailing } = this.props;
 
     // Class(es)
-    const mdcullWidth = 'mdc-text-field--fullwidth';
+    const mdcFullWidth = 'mdc-text-field--fullwidth';
     const mdcDisabled = 'mdc-text-field--disabled';
     const mdcWithLeadingIcon = 'mdc-text-field--with-leading-icon';
     const mdcOutlined = 'mdc-text-field--outlined';
@@ -47,13 +47,13 @@ class TextField extends PureComponent {
         <label
           ref={element => { this.mdTextField = element }}
           className={classNames('mdc-text-field',
-            { [mdcullWidth]: fullWidth },
+            { [mdcFullWidth]: fullWidth },
             { [mdcDisabled]: disabled },
             { [mdcWithLeadingIcon]: icon && !trailing },
             { [mdcOutlined]: outlined },
             { [mdcWithTrailingIcon]: icon && trailing })}>
           {icon &&
-            <TextFieldIcon icon={icon} />}
+            <TextFieldIcon font={icon} />}
           <input
             className="mdc-text-field__input"
             type="text"

@@ -1,6 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import SelectMenu from './SelectMenu';
+import { DONE } from '../../../../constants';
 
 describe('SelectMenu Component', () => {
   let wrapper;
@@ -22,11 +23,15 @@ describe('SelectMenu Component', () => {
           'Hello',
           'World'
         ],
+        helper: 'Need Help ?',
+        icon: DONE,
         label: 'Test'
       });
   
       expect(wrapper.props().data).toHaveLength(2);
       expect(wrapper.props().disabled).toBe(false);
+      expect(wrapper.props().helper).toBeDefined();
+      expect(wrapper.props().icon).toEqual(DONE);
       expect(wrapper.props().label).toHaveLength(4);
       expect(wrapper.props().outlined).toBe(false);
     });

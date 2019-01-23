@@ -19,6 +19,7 @@ export const CREATE = 'create';
 export const DONE = 'done';
 export const DONE_ALL = 'done_all';
 export const DONE_OUTLINE = 'done_outline';
+export const EVENT = 'event';
 export const PETS = 'pets';
 export const REPLY = 'reply';
 export const REPLY_ALL = 'reply_all';
