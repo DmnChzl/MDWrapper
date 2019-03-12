@@ -1,6 +1,6 @@
 {
   "name": "mdwrapper",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Material Design Wrapper",
   "main": "lib/components/ui/index.js",
   "author": "Damien Chazoule",
