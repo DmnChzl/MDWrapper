@@ -1,14 +1,13 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import ListItem from './ListItem';
-import { FOLDER, INFO } from '../../../constants';
+import MenuItem from './MenuItem';
 
-describe('ListItem Component', () => {
+describe('MenuItem Component', () => {
   let wrapper;
 
   beforeEach(() => {
     wrapper = mount(
-      <ListItem />
+      <MenuItem />
     );
   });
 
@@ -19,23 +18,17 @@ describe('ListItem Component', () => {
 
   it('Check Props', () => {
     wrapper.setProps({
-      leadingIcon: FOLDER,
-      title: 'Test',
-      subTitle: 'Sub Test',
-      trailingIcon: INFO
+      label: 'Test'
     });
 
-    expect(wrapper.props().leadingIcon).toEqual(FOLDER);
-    expect(wrapper.props().title).toHaveLength(4);
-    expect(wrapper.props().subTitle).toHaveLength(8);
-    expect(wrapper.props().trailingIcon).toEqual(INFO);
+    expect(wrapper.props().label).toHaveLength(4);
   });
 
   it('Simulate Click Event', () => {
     let value = false;
 
     wrapper.setProps({
-      title: 'Test',
+      label: 'Test',
       onClick: () => {
         value = true;
       }

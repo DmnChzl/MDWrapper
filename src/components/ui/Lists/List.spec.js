@@ -13,6 +13,7 @@ describe('List Component', () => {
 
   it('Renders', () => {
     expect(wrapper.exists()).toBe(true);
+    // expect(wrapper).toMatchSnapshot();
   });
 
   it('Check Props', () => {
