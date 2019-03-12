@@ -16,24 +16,34 @@ describe('TextField Component', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
-  it('Check Props', () => {
-    wrapper.setProps({
-      fullWidth: true,
-      helper: 'Need Help ?',
-      icon: DONE,
-      label: 'Done',
-      outlined: true,
-      trailing: true
+  describe('Check Props', () => {
+    it('Return Default', () => {
+      wrapper.setProps({
+        fullWidth: true,
+        helper: 'Need Help ?',
+        icon: DONE,
+        label: 'Done',
+        trailing: true
+      });
+  
+      expect(wrapper.props().fullWidth).toBe(true);
+      expect(wrapper.props().disabled).toBe(false);
+      expect(wrapper.props().helper).toBeDefined();
+      expect(wrapper.props().icon).toEqual(DONE);
+      expect(wrapper.props().label).toHaveLength(4);
+      expect(wrapper.props().placeholder).toBeFalsy();
+      expect(wrapper.props().trailing).toBe(true);
     });
-
-    expect(wrapper.props().fullWidth).toBe(true);
-    expect(wrapper.props().disabled).toBe(false);
-    expect(wrapper.props().helper).toBeDefined();
-    expect(wrapper.props().icon).toEqual(DONE);
-    expect(wrapper.props().label).toHaveLength(4);
-    expect(wrapper.props().outlined).toBe(true);
-    expect(wrapper.props().placeholder).toBeFalsy();
-    expect(wrapper.props().trailing).toBe(true);
+  
+    it('Return Outlined', () => {
+      wrapper.setProps({
+        label: 'Done',
+        outlined: true
+      });
+  
+      expect(wrapper.props().label).toHaveLength(4);
+      expect(wrapper.props().outlined).toBe(true);
+    });
   });
 
   it('Simulate Change Event', () => {

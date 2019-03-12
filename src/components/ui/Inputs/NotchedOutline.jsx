@@ -1,29 +1,23 @@
-import React, { PureComponent } from 'react';
-import { MDCNotchedOutline } from '@material/notched-outline/dist/mdc.notchedOutline';
-import '@material/notched-outline/dist/mdc.notched-outline.css';
+import React from 'react';
+import { node } from 'prop-types';
 
 /**
  * MD Component: NotchedOutline
+ *
+ * @param {Object} children Node Content
  */
-class NotchedOutline extends PureComponent {
-  componentDidMount() {
-    this.mdComponent = new MDCNotchedOutline(this.mdNotchedOutline);
-  }
+const NotchedOutline = ({ children }) => (
+  <div className="mdc-notched-outline">
+    <div className="mdc-notched-outline__leading"></div>
+    <div className="mdc-notched-outline__notch">
+      {children}
+    </div>
+    <div className="mdc-notched-outline__trailing"></div>
+  </div>
+);
 
-  render() {
-    return (
-      <>
-        <div
-          ref={element => { this.mdNotchedOutline = element }}
-          className="mdc-notched-outline">
-          <svg>
-            <path className="mdc-notched-outline__path" />
-          </svg>
-        </div>
-        <div className="mdc-notched-outline__idle"></div>
-      </>
-    );
-  }
-}
+NotchedOutline.propTypes = {
+  children: node
+};
 
 export default NotchedOutline;

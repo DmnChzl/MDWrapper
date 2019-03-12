@@ -2,7 +2,7 @@ module.exports = {
   coverageDirectory: './coverage/',
   collectCoverage: true,
   testMatch: [
-    '<rootDir>/src/**/?(*.)(spec|test).{js,jsx}'
+    '<rootDir>/src/**/*.(spec|test).{js,jsx}'
   ],
   transform: {
     '^.+\\.(js|jsx)$': 'babel-jest',
@@ -18,5 +18,7 @@ module.exports = {
     'js',
     'jsx'
   ],
-  setupTestFrameworkScriptFile: '<rootDir>/src/setupTests.js'
+  setupFilesAfterEnv: [
+    '<rootDir>/src/setupTests.js'
+  ]
 };

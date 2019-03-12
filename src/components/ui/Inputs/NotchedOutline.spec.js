@@ -7,12 +7,18 @@ describe('NotchedOutline Component', () => {
 
   beforeEach(() => {
     wrapper = mount(
-      <NotchedOutline />
+      <NotchedOutline>
+        Test
+      </NotchedOutline>
     );
   });
 
   it('Renders', () => {
     expect(wrapper.exists()).toBe(true);
     // expect(wrapper).toMatchSnapshot();
+  });
+
+  it('Check Props', () => {
+    expect(wrapper.props().children).toHaveLength(4);
   });
 });

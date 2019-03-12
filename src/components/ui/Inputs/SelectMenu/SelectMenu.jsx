@@ -5,7 +5,7 @@ import { MDCSelect } from '@material/select/dist/mdc.select';
 import FormField from '../FormField';
 import FloatingLabel from '../FloatingLabel';
 import LineRipple from '../LineRipple';
-import SelectMenuNotchedOutlined from './SelectMenuNotchedOutlined';
+import NotchedOutline from '../NotchedOutline';
 import SelectMenuIcon from './SelectMenuIcon';
 import SelectMenuHelperText from './SelectMenuHelperText';
 import '@material/select/dist/mdc.select.css';
@@ -64,10 +64,10 @@ class SelectMenu extends PureComponent {
               <LineRipple />
             </>}
           {outlined &&
-            <SelectMenuNotchedOutlined>
+            <NotchedOutline>
               {label &&
                 <FloatingLabel>{label}</FloatingLabel>}
-            </SelectMenuNotchedOutlined>}
+            </NotchedOutline>}
         </div>
         {helper &&
           <SelectMenuHelperText>{helper}</SelectMenuHelperText>}

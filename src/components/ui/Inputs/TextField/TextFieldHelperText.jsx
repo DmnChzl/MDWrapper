@@ -15,14 +15,16 @@ class TextFieldHelperText extends PureComponent {
 
   render() {
     const { children } = this.props;
-
+    
     return (
-      <p
-        ref={element => { this.mdTextFieldHelperText = element }}
-        className="mdc-text-field-helper-text"
-        aria-hidden="true">
-        {children}
-      </p>
+      <div className="mdc-text-field-helper-line">
+        <p
+          ref={element => { this.mdTextFieldHelperText = element }}
+          className="mdc-text-field-helper-text"
+          aria-hidden="true">
+          {children}
+        </p>
+      </div>
     );
   }
 }

@@ -41,17 +41,19 @@ class TextField extends PureComponent {
     const mdcWithLeadingIcon = 'mdc-text-field--with-leading-icon';
     const mdcOutlined = 'mdc-text-field--outlined';
     const mdcWithTrailingIcon = 'mdc-text-field--with-trailing-icon';
+    const mdcNoLabel = 'mdc-text-field--no-label';
 
     return (
       <FormField style={clearFix}>
-        <label
+        <div
           ref={element => { this.mdTextField = element }}
           className={classNames('mdc-text-field',
             { [mdcFullWidth]: fullWidth },
             { [mdcDisabled]: disabled },
             { [mdcWithLeadingIcon]: icon && !trailing },
             { [mdcOutlined]: outlined },
-            { [mdcWithTrailingIcon]: icon && trailing })}>
+            { [mdcWithTrailingIcon]: icon && trailing },
+            { [mdcNoLabel]: !label })}>
           {icon &&
             <TextFieldIcon font={icon} />}
           <input
@@ -60,13 +62,15 @@ class TextField extends PureComponent {
             placeholder={placeholder}
             onChange={e => onChange(e)}
             disabled={disabled} />
-          {label &&
+          {!outlined && label &&
             <FloatingLabel>{label}</FloatingLabel>}
-          {fullWidth &&
-            <LineRipple />}
           {outlined &&
-            <NotchedOutline />}
-        </label>
+            <NotchedOutline>
+              {label &&
+                <FloatingLabel>{label}</FloatingLabel>}
+            </NotchedOutline>}
+          {!outlined && <LineRipple />}
+        </div>
         {helper &&
           <TextFieldHelperText>{helper}</TextFieldHelperText>}
       </FormField>
