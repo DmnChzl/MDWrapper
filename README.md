@@ -23,6 +23,7 @@ Below, the list of all available components:
 | [IconToggle](./src/components/demo/icon_toggle/README.md) | [Icon Toggle Buttons](https://material.io/develop/web/components/buttons/icon-toggle-buttons) |
 | [Grid](./src/components/demo/layout/README.md) [GridInner](./src/components/demo/layout/README.md) [GridCell](./src/components/demo/layout/README.md) | [Layout Grid](https://material.io/develop/web/components/layout-grid) |
 | [LinearProgress](./src/components/demo/linear_progress/README.md) | [Linear Progress](https://material.io/develop/web/components/linear-progress) |
+| [List](./src/components/demo/list/README.md) | [Lists](https://material.io/develop/web/components/lists) |
 | [Radio](./src/components/demo/radio/README.md) | [Radio Buttons](https://material.io/develop/web/components/input-controls/radio-buttons) |
 | [SelectMenu](./src/components/demo/select_menu/README.md) | [Select Menus](https://material.io/develop/web/components/input-controls/select-menus) |
 | [Slider](./src/components/demo/slider/README.md) | [Sliders](https://material.io/develop/web/components/input-controls/sliders) |

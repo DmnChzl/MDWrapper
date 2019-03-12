@@ -9,6 +9,7 @@ export * from './icon_button';
 export * from './icon_toggle';
 export * from './layout';
 export * from './linear_progress';
+export * from './list';
 export * from './radio';
 export * from './select_menu';
 export * from './slider';

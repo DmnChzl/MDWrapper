@@ -12,6 +12,7 @@ import {
   IconToggle as IconToggleSample,
   Layout as LayoutSample,
   LinearProgress as LinearProgressSample,
+  List as ListSample,
   Radio as RadioSample,
   SelectMenu as SelectMenuSample,
   Slider as SliderSample,
@@ -37,6 +38,7 @@ const Router = () => (
     <Route path="/icon_toggle" component={IconToggleSample} />
     <Route path="/layout" component={LayoutSample} />
     <Route path="/linear_progress" component={LinearProgressSample} />
+    <Route path="/list" component={ListSample} />
     <Route path="/radio" component={RadioSample} />
     <Route path="/select_menu" component={SelectMenuSample} />
     <Route path="/slider" component={SliderSample} />

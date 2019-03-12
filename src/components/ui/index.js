@@ -10,6 +10,7 @@ export * from './Chips';
 export * from './Dialog';
 export * from './Inputs';
 export * from './Layouts';
+export * from './Lists';
 export * from './Tabs';
 export * from './TopBar';
 

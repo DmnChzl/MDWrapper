@@ -19,6 +19,7 @@ const getTabs = () => [
   'Icon Toggle',
   'Layout',
   'Linear Progress',
+  'List',
   'Radio',
   'Select Menu',
   'Slider',
