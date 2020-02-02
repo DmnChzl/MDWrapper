@@ -9,7 +9,7 @@ import { BOOKMARK } from '../../../constants';
  * @param {Function} onClick Click Trigger
  */
 const TopBarIcon = ({ font, onClick }) => (
-  <button className="material-icons mdc-top-app-bar__action-item" onClick={() => onClick()}>
+  <button className="material-icons mdc-top-app-bar__action-item mdc-icon-button" onClick={() => onClick()}>
     {font}
   </button>
 );

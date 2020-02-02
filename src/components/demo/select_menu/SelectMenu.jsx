@@ -17,7 +17,7 @@ const Demo = () => (
         <SelectMenu
           label={'Fruit'}
           data={['Apple', 'Banana', 'Clementine']}
-          onChange={e => console.log(e.target.value)} />
+          onClick={value => console.log(value)} />
       </GridCell>
     </GridInner>
 
@@ -26,7 +26,7 @@ const Demo = () => (
         <SelectMenu
           label={'Hue'}
           data={['Red', 'Green', 'Blue']}
-          onChange={e => console.log(e.target.value)}
+          onClick={value => console.log(value)}
           outlined />
       </GridCell>
     </GridInner>
@@ -37,7 +37,7 @@ const Demo = () => (
           label={'Fruit'}
           data={['Apple', 'Banana', 'Clementine']}
           helper={'Need Help ?'}
-          onChange={e => console.log(e.target.value)} />
+          onClick={value => console.log(value)} />
       </GridCell>
     </GridInner>
 
@@ -47,7 +47,7 @@ const Demo = () => (
           label={'Hue'}
           data={['Red', 'Green', 'Blue']}
           icon={BRUSH}
-          onChange={e => console.log(e.target.value)}
+          onClick={value => console.log(value)}
           outlined />
       </GridCell>
     </GridInner>

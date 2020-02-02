@@ -47,21 +47,23 @@ describe('SelectMenu Component', () => {
     });
   });
 
-  it('Simulate Change Event', () => {
-    let value = '';
+  it('Simulate Click Event', () => {
+    let value = false;
 
     wrapper.setProps({
-      onChange: event => {
-        value = event.target.value
+      data: [
+        'Hello',
+        'World'
+      ],
+      onClick: () => {
+        value = true;
       }
     });
 
-    wrapper.find('select').simulate('change', {
-      target: {
-        value: 'Test'
-      }
+    wrapper.find('li').forEach(node => {
+      node.simulate('click');
     });
 
-    expect(value).toHaveLength(4);
+    expect(value).toBe(true);
   });
 });

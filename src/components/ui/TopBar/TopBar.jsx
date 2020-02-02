@@ -42,7 +42,7 @@ class TopBar extends PureComponent {
           { [mdcShortCollapsed]: short && collapsed })}>
         <div className="mdc-top-app-bar__row">
           <section className="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-            <button className="material-icons mdc-top-app-bar__navigation-icon" onClick={() => onClick()}>menu</button>
+            <button className="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" onClick={() => onClick()}>menu</button>
             <span className="mdc-top-app-bar__title">{title}</span>
           </section>
           {children && <section className="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">

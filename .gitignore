@@ -22,9 +22,6 @@ node_modules/
 # Yarn Integrity File
 .yarn-integrity
 
-# Lock Files
-package-lock.json
-yarn.lock
-
-# VSCode Settings
+# IntelliJ / VSCode Settings
+.idea
 .vscode

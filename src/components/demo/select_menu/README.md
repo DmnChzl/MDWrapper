@@ -14,7 +14,7 @@ const Demo = () => (
     label={'Hue'}
     data={['Red', 'Green', 'Blue']}
     icon={'brush'}
-    onChange={e => console.log(e.target.value)} />
+    onClick={value => console.log(value)} />
 );
 ```
 
@@ -29,5 +29,5 @@ List of all properties for the **SelectMenu** component:
 | helper | _string_ | - | Helper Text |
 | icon | _string_ | - | Material Design Icon |
 | label | _string_ | - | Label |
-| onChange | _function_ | void | Change Trigger |
+| onClick | _function_ | void | Click Trigger |
 | outlined | _boolean_ | false | Outlined Style |

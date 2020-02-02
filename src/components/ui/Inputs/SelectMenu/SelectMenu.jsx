@@ -18,7 +18,7 @@ import '@material/select/dist/mdc.select.css';
  * @param {String} helper Helper Text
  * @param {String} icon Material Design Icon
  * @param {String} label Label
- * @param {Function} onChange Change Trigger
+ * @param {Function} onClick Click Trigger
  * @param {Boolean} outlined Outlined Style
  */
 class SelectMenu extends PureComponent {
@@ -27,7 +27,7 @@ class SelectMenu extends PureComponent {
   }
 
   render() {
-    const { data, disabled, helper, icon, label, onChange, outlined } = this.props;
+    const { data, disabled, helper, icon, label, onClick, outlined } = this.props;
 
     // Class(es)
     const mdcDisabled = 'mdc-select--disabled';
@@ -42,32 +42,33 @@ class SelectMenu extends PureComponent {
             { [mdcDisabled]: disabled },
             { [mdcOutlined]: outlined },
             { [mdcWithLeadingIcon]: icon })}>
-          {icon &&
-            <SelectMenuIcon font={icon} />}
-          <i className="mdc-select__dropdown-icon"></i>
-          <select
-            className="mdc-select__native-control"
-            onChange={e => onChange(e)}
-            defaultValue=""
-            disabled={disabled}>
-            <option value="" disabled></option>
+          <div className="mdc-select__anchor">
+            {icon &&
+              <SelectMenuIcon font={icon} />}
+            <i className="mdc-select__dropdown-icon"></i>
+            <div className="mdc-select__selected-text"></div>
+            {!outlined &&
+              <>
+                {label &&
+                  <FloatingLabel>{label}</FloatingLabel>}
+                <LineRipple />
+              </>}
+            {outlined &&
+              <NotchedOutline>
+                {label &&
+                  <FloatingLabel>{label}</FloatingLabel>}
+              </NotchedOutline>}
+          </div>
+
+          <div className="mdc-select__menu mdc-menu mdc-menu-surface">
+            <ul className="mdc-list">
             {data.map((value, index) => (
-              <option key={index} value={value}>
+              <li key={index} className="mdc-list-item" data-value={value} onClick={() => onClick(value)}>
                 {value}
-              </option>
+              </li>
             ))}
-          </select>
-          {!outlined &&
-            <>
-              {label &&
-                <FloatingLabel>{label}</FloatingLabel>}
-              <LineRipple />
-            </>}
-          {outlined &&
-            <NotchedOutline>
-              {label &&
-                <FloatingLabel>{label}</FloatingLabel>}
-            </NotchedOutline>}
+            </ul>
+          </div>
         </div>
         {helper &&
           <SelectMenuHelperText>{helper}</SelectMenuHelperText>}
@@ -79,7 +80,7 @@ class SelectMenu extends PureComponent {
 SelectMenu.defaultProps = {
   data: [],
   disabled: false,
-  onChange: () => {},
+  onClick: () => {},
   outlined: false
 };
 
@@ -89,7 +90,7 @@ SelectMenu.propTypes = {
   helper: string,
   icon: string,
   label: string,
-  onChange: func,
+  onClick: func,
   outlined: bool
 };
 
