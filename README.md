@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/mdwrapper.svg)](https://github.com/mrdoomy/mdwrapper) [![build](https://travis-ci.org/MrDoomy/MDWrapper.svg)](https://travis-ci.org/MrDoomy/MDWrapper.svg) [![minified size](https://img.shields.io/bundlephobia/min/mdwrapper.svg)](https://www.npmjs.com/package/mdwrapper) [![codecov](https://img.shields.io/codecov/c/github/MrDoomy/MDWrapper.svg)](https://codecov.io/gh/MrDoomy/MDWrapper) [![dependencies](https://img.shields.io/david/mrdoomy/mdwrapper.svg)](https://david-dm.org/mrdoomy/mdwrapper) [![beerware](https://img.shields.io/badge/license-beerware-orange.svg)](https://wikipedia.org/wiki/beerware)
+[![npm](https://img.shields.io/npm/v/mdwrapper.svg)](https://github.com/mrdoomy/mdwrapper) [![build](https://travis-ci.org/MrDoomy/MDWrapper.svg)](https://travis-ci.org/MrDoomy/MDWrapper.svg) [![minified size](https://img.shields.io/bundlephobia/min/mdwrapper.svg)](https://www.npmjs.com/package/mdwrapper) [![codecov](https://img.shields.io/codecov/c/github/MrDoomy/MDWrapper.svg)](https://codecov.io/gh/MrDoomy/MDWrapper) [![beerware](https://img.shields.io/badge/license-beerware-orange.svg)](https://wikipedia.org/wiki/beerware)
 
 # MDWrapper
 
@@ -54,13 +54,13 @@ npm install
 And launch the project as a web app to see examples:
 
 ```
-npm start
+npm run start
 ```
 
 You can also run all unit tests:
 
 ```
-npm test
+npm run test
 ```
 
 And finally compile the project:
