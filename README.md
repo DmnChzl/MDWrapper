@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/mdwrapper.svg)](https://github.com/mrdoomy/mdwrapper) [![build](https://travis-ci.org/MrDoomy/MDWrapper.svg)](https://travis-ci.org/MrDoomy/MDWrapper.svg) [![minified size](https://img.shields.io/bundlephobia/min/mdwrapper.svg)](https://www.npmjs.com/package/mdwrapper) [![codecov](https://img.shields.io/codecov/c/github/MrDoomy/MDWrapper.svg)](https://codecov.io/gh/MrDoomy/MDWrapper) [![beerware](https://img.shields.io/badge/license-beerware-orange.svg)](https://wikipedia.org/wiki/beerware)
+[![build](https://travis-ci.org/DmnChzl/MDWrapper.svg)](https://travis-ci.org/DmnChzl/MDWrapper.svg) [![minified size](https://img.shields.io/bundlephobia/min/mdwrapper.svg)](https://www.npmjs.com/package/mdwrapper) [![codecov](https://img.shields.io/codecov/c/github/DmnChzl/MDWrapper.svg)](https://codecov.io/gh/DmnChzl/MDWrapper) [![beerware](https://img.shields.io/badge/license-beerware-orange.svg)](https://wikipedia.org/wiki/beerware)
 
 # MDWrapper
 
@@ -42,7 +42,7 @@ If you want more,
 You can clone the project:
 
 ```
-git clone https://github.com/mrdoomy/mdwrapper.git
+git clone https://github.com/dmnchzl/mdwrapper.git
 ```
 
 Install dependencies:

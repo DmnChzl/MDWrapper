@@ -3,8 +3,8 @@
   "version": "0.9.1",
   "description": "Material Design Wrapper",
   "main": "lib/components/ui/index.js",
-  "author": "Damien Chazoule",
-  "repository": "https://github.com/mrdoomy/mdwrapper.git",
+  "author": "Damien Chazoule <damien.chazoule@gmail.com>",
+  "repository": "https://github.com/dmnchzl/mdwrapper.git",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "compile": "babel ./src -d ./lib",
